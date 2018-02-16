@@ -53,17 +53,14 @@ $(document).ready(function() {
 $(function() {
 
     var data = [{
-        label: "Series 0",
-        data: 1
+        label: "Library",
+        data: 5
     }, {
-        label: "Series 1",
-        data: 3
+        label: "Home",
+        data: 19
     }, {
-        label: "Series 2",
+        label: "College",
         data: 9
-    }, {
-        label: "Series 3",
-        data: 20
     }];
 
     var plotObj = $.plot($("#flot-pie-chart"), data, {
@@ -1219,22 +1216,22 @@ $(function() {
             hoverable: true
         },
         legend: {
-            show: false
+            show: true
         },
-        tooltip: true,
-        tooltipOpts: {
-            content: "x: %x, y: %y"
-        }
+        //tooltip: true,
+        //tooltipOpts: {
+          //  content: "x: %x, y: %y"
+        //}
     };
     var barData = {
-        label: "bar",
+        label: "Hours",
         data: [
-            [1354521600000, 1000],
-            [1355040000000, 2000],
-            [1355223600000, 3000],
-            [1355306400000, 4000],
-            [1355487300000, 5000],
-            [1355571900000, 6000]
+            [1518269887000, 1.5],
+            [1518442687000, 0.4],
+            [1518529087000, 0.25],
+            [1518615487000, 1],
+            [1518701887000, 0.5],
+            [1518788287000, 0.75]
         ]
     };
     $.plot($("#flot-bar-chart"), [barData], barOptions);
