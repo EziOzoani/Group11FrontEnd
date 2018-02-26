@@ -4,30 +4,31 @@
 <head>
     <meta charset="utf-8" />
     <title>MyLearning</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
-    <link href="sb-admin-2.css" rel="stylesheet">
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-	
-	
-	
-	<style type = "text/css">
-	.addTopicButton {
-		position: absolute;
-		top: 15px;
-		left: 250px;
-	}
-	.addChart {
-		position: absolute;
-		top: 500px;
-		left: 500px;
-	}
-	</style>
+    <link href="../data/style.css" rel="stylesheet" type="text/css" />
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
+    <link href="../data/sb-admin-2.css" rel="stylesheet">
+    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+
+    <style type="text/css">
+        .addTopicButton {
+            position: absolute;
+            top: 15px;
+            left: 250px;
+        }
+
+        .addChart {
+            position: absolute;
+            top: 500px;
+            left: 500px;
+        }
+    </style>
     <title></title>
-	
-	
-	
+
+
+
 </head>
 <body>
     <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom:0; background: #93c4ed; height: 40px">
@@ -70,7 +71,7 @@
 
             </li>
         </ul>
-		
+
         <div class="navbar-default sidebar" role="navigation">
             <div class="sidebar-nav navbar-collapse">
                 <ul class="nav" id="side-menu">
@@ -84,28 +85,27 @@
                             </span>
                         </div>
                     </li>
-					
+
                     <li>
                         <a href="mainMenu.html"><i class="fa fa-dashboard fa-fw"></i> Main Menu</a>
                     </li>
                     <li>
                         <a href="index.html"><i class="fa fa-globe fa-fw"></i> Locations</a>
                     </li>
-                    
                     <li>
-                        <a href="myLearning.html"><i class="fa fa-university fa-fw"></i> My Learning Topics</a>
-                    </li><li>
-    <a href="myAppUsage.html"><i class="fa fa-bar-chart-o fa-fw"></i> My Apps</a>
-</li>
-                    <li>
-                        <a href="addTopic.html"><i class="fa fa-pencil fa-fw"></i> Add Topic</a>
+                        <a href="#"><i class="fa fa-university fa-fw"></i>My Learning Topics</a>
                     </li>
-                   
-<li>
+                    <li>
+                        <a href="myAppUsage.html"><i class="fa fa-bar-chart-o fa-fw"></i> My Apps</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-pencil fa-fw"></i> Add Topic</a>
+                    </li>
+                    <li>
                         <a href="#">Java<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
-							<li>
-                                <a href="#" style="color:Green; ">Related Topics</a>  
+                            <li>
+                                <a href="#" style="color:Green; ">Related Topics</a>
                             </li>
                             <li>
                                 <a href="#">Object Oriented Programming</a>
@@ -125,8 +125,8 @@
                     <li>
                         <a href="#">History<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
-							<li>
-                                <a href="#" style="color:Green; ">Related Topics</a>  
+                            <li>
+                                <a href="#" style="color:Green; ">Related Topics</a>
                             </li>
                             <li>
                                 <a href="#">Ancient Rome</a>
@@ -141,12 +141,12 @@
                                 <a href="#">Irish History</a>
                             </li>
                         </ul>
-					</li>
-					<li>
+                    </li>
+                    <li>
                         <a href="#">Art<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
-							<li>
-                                <a href="#" style="color:Green; ">Related Topics</a>  
+                            <li>
+                                <a href="#" style="color:Green; ">Related Topics</a>
                             </li>
                             <li>
                                 <a href="#">Modern Art</a>
@@ -161,42 +161,87 @@
                                 <a href="#">Sculpting</a>
                             </li>
                         </ul>
-					</li>
-				</div>
+                    </li>
             </div>
-</nav>	
-	<div id="page-wrapper">
+        </div>
+    </nav>
+    <div id="page-wrapper">
         <div class="row">
-            
-            
+            <div class="col-lg-12">
+                <h1 class="page-header">Add New Learning Topic</h1>
+            </div>
+            <div class="row">
+                <div class="col-lg-1"></div>
+                <div class="col-lg-4">
+                    <form role="form">
+                        <div class="form-group">
+                        <label>Topic Name</label>
+                        <input class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label>Topic Category</label>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>Programming
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">Art
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">History
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="optionsRadios" id="optionsRadios4" value="option4">Sport
+                            </label>
+                        </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Hours to Work Per Week</label>
+                            <select class="form-control">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-default">Submit</button>
+                    </form>
+</div>
+            </div>
+
         </div>
     </div>
-            <!-- /.row -->
-     
-
+    <!-- /.row -->
     <!-- Custom Theme JavaScript -->
     <script src="../dist/js/sb-admin-2.js"></script>
-	
+
     <!-- jQuery -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <!-- Bootstrap Core JavaScript -->
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
     <!-- Metis Menu Plugin JavaScript -->
-    <script src="vendor/metisMenu/metisMenu.min.js"></script>
+    <script src="../vendor/metisMenu/metisMenu.min.js"></script>
     <!-- Custom Theme JavaScript -->
-    <script src="dist/js/sb-admin-2.js"></script>
-    <script src="vendor/raphael/raphael.min.js"></script>
-    <script src="vendor/morrisjs/morris.min.js"></script>
-    <script src="data/morris-data.js"></script>
-	
-	
-		
-		
-	<!--
-	<div id="page-wrapper">
+    <script src="../dist/js/sb-admin-2.js"></script>
+    <script src="../vendor/raphael/raphael.min.js"></script>
+    <script src="../vendor/morrisjs/morris.min.js"></script>
+    <script src="../data/morris-data.js"></script>
+
+
+
+
+    <!--
+    <div id="page-wrapper">
         <div class="row">
             <div class="panel panel-default">
-				<div class="panel-heading">
+                <div class="panel-heading">
                     Donut Chart Example
                 </div>
                 <div class="panel-body">
@@ -204,11 +249,11 @@
                 </div>
              </div>
         </div>
-	</div>
-	-->
-	
-    
-	
-	
+    </div>
+    -->
+
+
+
+
 </body>
 </html>
