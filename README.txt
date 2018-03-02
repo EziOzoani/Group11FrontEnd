@@ -1,6 +1,4 @@
-To open the pages click on any of the html files inside of the main folder. Some useful info:
+To open the pages click on any of the html files inside of the 'main' folder. 
 
-1. login page does not require any credentials, just click 'login' to continue
-2. main menu takes you to a main menu page which we intend to remove and move all the navigation to the sidebar
-3. all the data is currently hard-coded. We will fuse the back and front end over the next two weeks. 
+These pages are connected to css and js located in vendor and dist folders. The css is referenced to in the header and the scripts are referenced to at the very end of the body tag. 
 
