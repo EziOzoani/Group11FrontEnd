@@ -85,6 +85,47 @@ $(function() {
 
 });
 
+//---------------------------------------------------------------------------
+//Flot Pie Chart
+$(function() {
+
+    var data = [{
+        label: "Java",
+        data: 2
+    }, {
+        label: "Art",
+        data: 1
+    }, {
+        label: "History",
+        data: 3
+    }, {
+        label: "Science",
+        data: 4
+    }];
+
+    var plotObj = $.plot($("#flot-pie-chart-myLearning"), data, {
+        series: {
+            pie: {
+                show: true
+            }
+        },
+        grid: {
+            hoverable: true
+        },
+        tooltip: true,
+        tooltipOpts: {
+            content: "%p.0%, %s", // show percentages, rounding to 2 decimal places
+            shifts: {
+                x: 20,
+                y: 0
+            },
+            defaultTheme: false
+        }
+    });
+
+});
+//---------------------------------------------------------------------------
+
 //Flot Multiple Axes Line Chart
 $(function() {
     var oilprices = [
