@@ -44,22 +44,26 @@
                     <li>
                         <a href="#">
                             <div>
-                                <strong>John Smith</strong>
+                                <strong>User: 1432</strong>
                                 <span class="pull-right text-muted">
-                                    <em>Yesterday</em>
+                                    <em>Topic Request</em>
                                 </span>
                             </div>
-                            <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend...</div>
+                            <div>Add topic: Gymnastics</div>
                         </a>
                     </li>
-
+					<li>
+                        <a href="#">
+                            <div>
+                                <strong>User: 2846</strong>
+                                <span class="pull-right text-muted">
+                                    <em>Topic Request</em>
+                                </span>
+                            </div>
+                            <div>Add topic: Soap Opera</div>
+                        </a>
+                    </li>
                 </ul>
-            </li>
-            <li class="dropdown">
-                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                    <i class="fa fa-tasks fa-fw"></i>
-                    <i class="fa fa-caret-down"></i>
-                </a>
             </li>
         </ul>
         <div class="navbar-default sidebar" role="navigation">
@@ -75,33 +79,22 @@
                             </span>
                         </div>
                     </li>
-                    <!-- <li><a href="index.html"><i class="fa fa-globe fa-fw"></i> Locations</a></li> -->
-					<li>
-                        <a href="'#"><i class="fa fa-sitemap fa-fw"></i>Usage Overview<span class="fa arrow"></span></a>
-                        <ul class="nav nav-second-level">
-                            <li>
-                                <a href="usageOverview.html">Apps & Learning</a>
-                            </li>
-                            <li>
-                                <a href="appOverview.html">Usage & Effectiveness</a>
-                            </li>
-						</ul>
+                    <li>
+						<a href="usageOverview.html"><i class="fa fa-group fa-fw"></i> Apps & Learning</a>
 					</li>
 					<li>
-                        <a href="'#"><i class="fa fa-sitemap fa-fw"></i>User Overview<span class="fa arrow"></span></a>
-                        <ul class="nav nav-second-level">
-                            <li>
-                                <a href="userTable.html">User's Apps & Learning</a>
-                            </li>
-                            <li>
-                                <a href="userApps.html">User's Weekly Usage</a>
-                            </li>
-						</ul>
-					</li>	
+						<a href="appOverview.html"><i class="fa fa-group fa-fw"></i> Usage & Effectiveness</a>
+					</li>
+					<li>
+						<a href="userTable.html"><i class="fa fa-user fa-fw"></i> User's Apps & Learning</a>
+					</li>
+					<li>
+						<a href="userApps.html"><i class="fa fa-user fa-fw"></i> User's Weekly Usage</a>
+					</li>
 					<li>
 						<a href="topicOverview.html"><i class="fa fa-university fa-fw"></i>Learning Topics</a>
 					</li>
-				<!-- </ul> -->
+				</ul>
 			</div>
         </div>
 	</nav>	
@@ -111,24 +104,6 @@
                 <h1 class="page-header">Usage & Effectiveness</h1>
             </div>
         </div>
-		<!-- Radio Buttons 
-		<div class="row">
-			<div class="col-lg-8">
-				<div class="form-group">
-					<label>Sort by:</label>
-					<label class="radio-inline">
-						<input type="radio" name="optionsRadiosInline" id="optionsRadiosInline1" value="option1" checked>No. of Users
-					</label>
-					<label class="radio-inline">
-						<input type="radio" name="optionsRadiosInline" id="optionsRadiosInline2" value="option2">Average Effectiveness
-					</label>
-					<label class="radio-inline">
-						<input type="radio" name="optionsRadiosInline" id="optionsRadiosInline3" value="option3">Average Usage Duration
-					</label>
-				</div>
-			</div>
-		</div> -->
-		
 		<!-- Pie Chart -->
         <div class="row">
             <div class="col-lg-6">
@@ -138,7 +113,7 @@
                     </div>
                     <div class="panel-body">
                         <div class="flot-chart">
-                            <div class="flot-chart-content" id="flot-pie-chart"></div>
+                            <div class="flot-chart-content" id="flot-pie-chart-appOverview"></div>
                         </div>
                     </div>
                 </div>
@@ -151,7 +126,7 @@
                     </div>
                     <div class="panel-body">
                         <div class="flot-chart">
-                            <div class="flot-chart-content" id="flot-bar-chart"></div>
+                            <div class="flot-chart-content" id="flot-bar-chart-appOverview"></div>
                         </div>
                     </div>
                 </div>
