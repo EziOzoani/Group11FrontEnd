@@ -1,0 +1,196 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Access Learning</title>
+
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
+    <link href="../data/sb-admin-2.css" rel="stylesheet">
+    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <style type="text/css">
+        #linkButton {
+            width: 200px;
+        }
+    </style>
+    <link href="../data/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div id="wrapper">
+        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom:0; background: #93c4ed; height: 40px">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only"> Toggle naviagation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#" style="font-size:32px">Access Learning</a>
+            </div>
+            <ul class="nav navbar-top-links navbar-right"></ul>
+            <div class="navbar-default sidebar" role="navigation">
+                <div class="sidebar-nav navbar-collapse">
+                    <ul class="nav" id="side-menu">
+                        <li class="sidebar-search">
+                            <div class="input-group custom-search-form">
+                                <input type="text" class="form-control" placeholder="Search...">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-default" type="button">
+                                        <i class="fa fa-search"></i>
+                                    </button>
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="index.html"><i class="fa fa-globe fa-fw"></i> My Locations</a>
+                        </li>
+                        <li>
+                            <a href="myLearning.html"><i class="fa fa-university fa-fw"></i> My Learning </a>
+                        </li>
+                        <li>
+                            <a href="myAppUsage.html"><i class="fa fa-bar-chart-o fa-fw"></i> My Apps</a>
+                        </li>
+                        <li>
+                            <a href="weeklyOverview.html"><i class="fa fa-table fa-fw"></i> Weekly Overview</a>
+                        </li>
+                        <li>
+                            <a href="myGoals.html"> <i class=" fa fa-check-square-o fa-fw"> </i> My Goals</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- End of Nav -->
+    <div id="page-wrapper">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">My Learning Goals</h1>
+            </div>
+        </div>
+
+        <div class="col-lg-6">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    Goals for this week:
+                </div>
+                <!-- /.panel-heading -->
+                <div class="panel-body">
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Topic Name</th>
+                                    <th>Goal Description</th>
+                                    <th>Completion Date</th>
+                                    <th>App Used</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Science</td>
+                                    <td>Organic Chemistry revision</td>
+                                    <td>28/03/18</td>
+                                    <td>Youtube</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>History</td>
+                                    <td>Irish Civil War revision</td>
+                                    <td>30/03/18</td>
+                                    <td>Safari</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Java</td>
+                                    <td>Recursive Functions</td>
+                                    <td>31/03/18</td>
+                                    <td>Youtube</td>
+                                </tr>
+
+                                <tr>
+                                    <td>4</td>
+                                    <td>Accounting</td>
+                                    <td>Finish assignment</td>
+                                    <td>08/04/18</td>
+                                    <td>Safari, Youtube</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+                    <!-- /.table-responsive -->
+                </div>
+                <!-- /.panel-body -->
+            </div>
+            <!-- /.panel -->
+        </div>
+        <div class="col-lg-6">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    Add new goal
+                </div>
+                <!-- /.panel-heading -->
+                <div class="panel-body">
+
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <form role="form">
+                                <div class="form-group">
+                                    <label>Topic Name</label>
+                                    <select class="form-control">
+                                        <option>--Choose One--</option>
+                                        <option>Functional Programming</option>
+                                        <option>Accounting</option>
+                                        <option>Financial Forecasting</option>
+                                        <option>Creative Writing</option>
+                                        <option>Javascript</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label>Goal Description</label>
+                                    <input class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label>Date (for completion)</label>
+                                    <input class="form-control" placeholder="DD/MM/YY">
+                                    <p class="help-block">E.G. 04/04/18</p>
+                                </div>
+                                <div class="form-group">
+                                    <label>Applications Used</label>
+                                    <select multiple class="form-control">
+                                        <option>--Hold CTRL To Choose--</option>
+                                        <option>Whatsapp</option>
+                                        <option>Safari</option>
+                                        <option>Mail</option>
+                                        <option>Youtube</option>
+                                        <option>Kindle</option>
+                                    </select>
+                                </div>
+                                <button type="submit" class="btn btn-default">Add Goal</button>
+                            </form>
+                        </div>
+                        <!-- /.col-lg-6 (nested) -->
+                    </div>
+                </div>
+                <!-- /.panel-body -->
+            </div>
+        </div>
+    </div>
+    <!-- jQuery -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="../vendor/metisMenu/metisMenu.min.js"></script>
+    <!-- Custom Theme JavaScript -->
+    <script src="../dist/js/sb-admin-2.js"></script>
+    <script src="../vendor/raphael/raphael.min.js"></script>
+    <script src="../vendor/morrisjs/morris.min.js"></script>
+    <script src="../data/myOwn.js"></script>
+
+</body>
+</html>
