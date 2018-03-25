@@ -146,6 +146,7 @@
 					<div class="form-group">
 						<label>Select Parent Topic</label>
 						<select class="form-control">
+                            <option>--Choose One--</option>
 							<option>Entertainment</option>
 							<option>Sport</option>
 							<option>Culture</option>
@@ -154,19 +155,27 @@
 							<option>Science</option>
 						</select>
 					</div>	
-				</div>
-			</div>
-			<!-- Search Bar -->		
-			<div class="row">
-				<div class="col-lg-6">
-					<form role="form">
-						<div class="form-group input-group">
-							<input type="text" class="form-control" placeholder="Search Learning Topics">
-								<span class="input-group-btn">
-									<button class="btn btn-default" type="button">Add Topic</i></button>
-								</span>
-						</div>
-					</form>		
+                    <div class="form-group">
+                        <label>Select Sub-Topic</label>
+                        <select class="form-control">
+                            <option>--Choose One--</option>
+                            <option>Programming</option>
+                            <option>Engineering</option>
+                            <option>Statistics</option>
+                            <option>Innovation</option>
+                            <option>Hardware</option>
+                        </select>
+                    </div>
+                        
+                        <div class="form-group input-group">
+                            <input type="text" class="form-control" placeholder="Give your topic a name">
+                            <span class="input-group-btn">
+                                <button class="btn btn-default" type="button" onclick="location.href='myLearning2.html';">
+                                    Add Topic
+                                </button>
+                            </span>
+                        </div>
+                    
 				</div>
 			</div>
 			<!-- Table -->
