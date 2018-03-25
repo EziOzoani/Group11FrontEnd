@@ -1,22 +1,22 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
-    <title>My Goals</title>
+    <title>Access Learning</title>
 
-    <link href="../data/style.css" rel="stylesheet" type="text/css" />
+    
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="../vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
     <link href="../data/sb-admin-2.css" rel="stylesheet">
     <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-	
+   
 	<style type = "text/css">
 		#linkButton {
 			width:200px;
 		}
 	</style>
-
+    <link href="../data/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
     <div id="wrapper">
@@ -28,7 +28,7 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="index.html" style="font-size:32px">My Goals</a>
+				<a class="navbar-brand" href="#" style="font-size:32px">Access Learning</a>
 			</div>
 			<ul class="nav navbar-top-links navbar-right">
 
@@ -50,18 +50,22 @@
 							<a href="index.html"><i class="fa fa-globe fa-fw"></i> My Locations</a>
 						</li>
 						<li>
-							<a href="myLearning.html"><i class="fa fa-university fa-fw"></i> My Learning Topics</a>
+							<a href="myLearning.html"><i class="fa fa-university fa-fw"></i> My Learning </a>
 						</li>
 						<li>
 							<a href="myAppUsage.html"><i class="fa fa-bar-chart-o fa-fw"></i> My Apps</a>
 						</li>
 						<li>
-							<a href="tables.html"><i class="fa fa-table fa-fw"></i>Weekly Overview</a>
+							<a href="weeklyOverview.html"><i class="fa fa-table fa-fw"></i> Weekly Overview</a>
 						</li> 
+                        <li>
+                            <a href="myGoals.html"> <i class=" fa fa-check-square-o fa-fw"> </i> My Goals</a>
+                        </li>
 					</ul> 
 				</div>
 			</div>
 		</nav>
+    </div>
 		<!-- End of Nav -->
 		<div id="page-wrapper">
 			<div class="row">
@@ -122,7 +126,7 @@
                         <!-- /.panel-body -->
                     </div>
                     <!-- /.panel -->
-
+                </div>
 
                 <div class="col-lg-6">
                     <div class="panel panel-default">
@@ -134,13 +138,18 @@
                             
                 		<div class="row">
                             <div class="col-lg-6">
-								<form role="form">
-	                                        
-	                                        <div class="form-group">
-	                                            <label>Topic Name</label>
-	                                            <input class="form-control">
-	                                            <p class="help-block">E.G. Art, Science, Java..</p>
-	                                        </div>
+								<form role="form">   
+                                            <div class="form-group">
+                                                <label>Topic Name</label>
+                                                <select class="form-control">
+                                                    <option>--Choose One--</option>
+                                                    <option>Functional Programming</option>
+                                                    <option>Accounting</option>
+                                                    <option>Financial Forecasting</option>
+                                                    <option>Creative Writing</option>
+                                                    <option>Javascript</option>
+                                                </select>
+                                            </div>
 
 	                                        <div class="form-group">
 	                                            <label>Goal Description</label>
@@ -153,30 +162,17 @@
 	                                            <p class="help-block">E.G. 04/04/18</p>
 	                                        </div>
 
-	                                         <div class="form-group">
-                                            <label>Application used</label>
-                                            <div class="radio">
-                                                <label>
-                                                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>WhatsApp
-                                                </label>
+                                            <div class="form-group">
+                                                <label>Applications Used</label>
+                                                <select multiple class="form-control">
+                                                    <option>--Hold CTRL To Choose--</option>
+                                                    <option>Whatsapp</option>
+                                                    <option>Safari</option>
+                                                    <option>Mail</option>
+                                                    <option>Youtube</option>
+                                                    <option>Kindle</option>
+                                                </select>
                                             </div>
-                                            <div class="radio">
-                                                <label>
-                                                    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">Safari
-                                                </label>
-                                            </div>
-                                            <div class="radio">
-                                                <label>
-                                                    <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">Email
-                                                </label>
-                                            </div>
-                                            <div class="radio">
-                                                <label>
-                                                    <input type="radio" name="optionsRadios" id="optionsRadios4" value="option4">Youtube
-                                                </label>
-                                            </div>
-                                        	
-
 
 	                                        <button type="submit" class="btn btn-default">Add Goal</button>
 									</form>
@@ -188,6 +184,7 @@
             </div>
 
 		</div>
+ </div>
 	 <!-- jQuery -->
     <script src="../vendor/jquery/jquery.min.js"></script>
     <!-- Bootstrap Core JavaScript -->
